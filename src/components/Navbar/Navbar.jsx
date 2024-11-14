@@ -40,7 +40,7 @@ const Navbar = () => {
 
       {/* Action Button */}
       <div>
-        <Link to="/signup" className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+        <Link to="/login" className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
           Login
         </Link>
       </div>
