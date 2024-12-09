@@ -8,6 +8,8 @@ import Features from './pages/Features/Features'
 import Contact from './pages/Contact/Contact'
 import Signup from './components/Signup/Signup'
 import Login from './components/Login/Login'
+import NutritionAnalysis from './components/Analysis/NutritionAnalysis'
+import AnalysisTable from './components/Analysis/AnalysisTable'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +23,7 @@ function App() {
       <Route path='/contact' element={<Contact />}/>
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup />}/>
+      
       </Routes>
     </>
   )
