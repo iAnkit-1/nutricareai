@@ -5,3 +5,27 @@
 body{
     background-color: black;
 }
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: none; 
+    border-radius: 15px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #090909; 
+    border-radius: 6px; 
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #252424; 
+  }
+  
