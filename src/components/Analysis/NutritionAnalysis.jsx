@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-// Import your dataset
 import { indianFoodItems } from '../../assets/foodItems';
 
 const NutritionAnalysis = () => {
@@ -73,7 +71,7 @@ const NutritionAnalysis = () => {
         ))}
       </div>
 
-      {/* Submit Button */}
+
       <button
         className="mt-4 bg-blue-500 text-white p-2 rounded"
         onClick={handleSubmit}
@@ -81,7 +79,7 @@ const NutritionAnalysis = () => {
         Analyze Nutrition
       </button>
 
-      {/* Analysis Result */}
+    
       {analysisResult && (
         <div className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Analysis Result</h2>

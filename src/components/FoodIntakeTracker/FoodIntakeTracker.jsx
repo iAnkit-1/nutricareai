@@ -81,9 +81,9 @@ const FoodIntakeTracker = () => {
         </button>
       </div>
 
-      {/* Non-centered Analysis Table */}
+      
       {result && (
-        <div className="ml-0 my-4 text-white">
+        <div className="my-40 text-white flex items-center justify-center h-screen">
           <AnalysisTable anaresult={result} />
         </div>
       )}

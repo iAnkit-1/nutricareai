@@ -4,7 +4,7 @@ const DailyFoodTable = ({ foodItems, onRemoveFood }) => {
   console.log(foodItems);
   
   return (
-    <div className="my-0 text-white">
+    <div className="my-0 text-white ">
       <h3 className="text-3xl font-bold text-center mb-5 text-blue-500">Daily Consumed Food</h3>
       <table className="w-full border text-center">
         <thead>
