@@ -50,7 +50,7 @@ const FoodIntakeTracker = () => {
         console.error('Failed to send data from frontend');
       }
     } catch (error) {
-      setLoading(false); // Reset loading state
+      setLoading(false); 
       console.error('Error fetching analysis:', error);
     } finally {
       setLoading(false);
@@ -58,10 +58,10 @@ const FoodIntakeTracker = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white flex flex-col items-center    p-4">
       {/* Centered content */}
       <div className="flex flex-col items-center justify-center p-4">
-        <h2 className="text-3xl font-bold mb-4 text-center text-blue-500">Track Your Daily Food Intake</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center text-blue-500">Track Your Daily Food Ingredients</h2>
 
         {/* Food Selector Component */}
         <FoodSelector onAddFood={handleAddFood} />
@@ -83,7 +83,7 @@ const FoodIntakeTracker = () => {
 
       
       {result && (
-        <div className="my-40 text-white flex items-center justify-center h-screen">
+        <div className="mt-[300px] text-white flex items-center justify-center h-screen">
           <AnalysisTable anaresult={result} />
         </div>
       )}
