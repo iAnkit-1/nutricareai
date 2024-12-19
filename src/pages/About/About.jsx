@@ -2,9 +2,9 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-gray-900 text-white py-16">
+    <div className="bg-white text-gray-900 py-16">
       <div className="max-w-5xl mx-auto px-6">
-        <h1 className="text-5xl font-extrabold text-center mb-8 text-gray-100">
+        <h1 className="text-5xl font-extrabold text-center mb-8 text-gray-800">
           About Nutricare AI
         </h1>
         <p className="text-lg text-center mb-12 leading-relaxed max-w-3xl mx-auto opacity-80">
@@ -17,7 +17,7 @@ const About = () => {
         {/* AI Visual */}
         <div className="mb-12 text-center">
           <img
-            src="https://via.placeholder.com/600x300/1a202c/808080?Text=AI+Nutrition+Model"
+            src="https://via.placeholder.com/600x300/ffffff/808080?Text=AI+Nutrition+Model"
             alt="AI Nutrition Model"
             className="mx-auto rounded-lg shadow-xl"
           />
@@ -25,7 +25,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-3xl font-semibold mb-6 text-blue-400">How It Works</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-blue-500">How It Works</h2>
             <p className="text-lg leading-relaxed opacity-90">
               Nutricare AI analyzes your food choices, portion sizes, and dietary preferences. By processing
               these details, it calculates the nutritional value of your daily meals and identifies potential
@@ -43,7 +43,7 @@ const About = () => {
           </div>
 
           <div>
-            <h2 className="text-3xl font-semibold mb-6 text-blue-400">Why Choose Nutricare AI?</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-blue-500">Why Choose Nutricare AI?</h2>
             <ul className="list-disc list-inside text-lg opacity-90">
               <li>Personalized nutritional insights based on your unique dietary habits.</li>
               <li>AI-powered analysis of food intake for accurate recommendations.</li>
@@ -55,7 +55,7 @@ const About = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-4 text-blue-400">Our Mission</h3>
+          <h3 className="text-2xl font-bold mb-4 text-blue-500">Our Mission</h3>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed opacity-90">
             Nutricare AI’s mission is to empower individuals with the knowledge they need to make better
             dietary choices, fostering a healthier and more balanced lifestyle for everyone. By leveraging
@@ -65,7 +65,7 @@ const About = () => {
 
         {/* AI Concept Image */}
         <div className="mt-12 text-center">
-          <h3 className="text-2xl font-bold mb-4 text-blue-400">Join Us on Our Journey</h3>
+          <h3 className="text-2xl font-bold mb-4 text-blue-500">Join Us on Our Journey</h3>
           <p className="text-lg mb-6 max-w-2xl mx-auto opacity-90">
             Whether you're looking to improve your eating habits, manage a specific health condition, or just
             explore healthier food options, Nutricare AI is here to guide you every step of the way. Join our
@@ -73,7 +73,7 @@ const About = () => {
             help of AI.
           </p>
           <img
-            src="https://via.placeholder.com/800x400/1a202c/808080?Text=AI+Nutrition+Journey"
+            src="https://via.placeholder.com/800x400/ffffff/808080?Text=AI+Nutrition+Journey"
             alt="Join Nutricare AI"
             className="mx-auto rounded-lg shadow-xl"
           />

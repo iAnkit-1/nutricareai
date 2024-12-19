@@ -32,18 +32,18 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white min-h-screen flex items-center justify-center">
-      <div className="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-extrabold text-center mb-6 text-gray-100">Welcome Back!</h1>
+    <div className="bg-gradient-to-r from-white via-gray-100 to-gray-200 text-gray-900 min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+        <h1 className="text-4xl font-extrabold text-center mb-6 text-gray-800">Welcome Back!</h1>
         <p className="text-lg text-center mb-8 leading-relaxed opacity-80">
           Log in to continue your personalized health journey with Nutricare AI.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="email" className="block text-lg font-medium text-white">Email Address</label>
+            <label htmlFor="email" className="block text-lg font-medium text-gray-800">Email Address</label>
             <div className="relative">
-              <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
               <input
                 type="email"
                 id="email"
@@ -51,16 +51,16 @@ const Login = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full pl-10 py-3 bg-gray-100 text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 required
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-lg font-medium text-white">Password</label>
+            <label htmlFor="password" className="block text-lg font-medium text-gray-800">Password</label>
             <div className="relative">
-              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
               <input
                 type={showPassword ? "text" : "password"}
                 id="password"
@@ -68,13 +68,13 @@ const Login = () => {
                 value={formData.password}
                 onChange={handleChange}
                 placeholder="Enter Your Password"
-                className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full pl-10 py-3 bg-gray-100 text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
               >
                 {showPassword ? <FaEye /> : <FaEye />}
               </button>
@@ -90,7 +90,7 @@ const Login = () => {
               onChange={handleChange}
               className="h-5 w-5 text-blue-500"
             />
-            <label htmlFor="rememberMe" className="ml-3 text-lg text-white">Remember me</label>
+            <label htmlFor="rememberMe" className="ml-3 text-lg text-gray-800">Remember me</label>
           </div>
 
           <div className="text-center">
@@ -104,9 +104,9 @@ const Login = () => {
         </form>
 
         <div className="text-center mt-6">
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-gray-600">
             Don't have an account?{' '}
-            <a href="/signup" className="text-blue-400 hover:underline">
+            <a href="/signup" className="text-blue-500 hover:underline">
               Sign Up
             </a>
           </p>

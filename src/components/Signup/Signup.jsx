@@ -46,18 +46,18 @@ const Signup = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white py-16">
+    <div className="bg-gradient-to-r from-white via-gray-100 to-gray-200 text-gray-900 py-16">
       <div className="max-w-lg mx-auto px-6">
-        <h1 className="text-3xl font-bold text-center mb-6 text-gray-100">Create Your Account</h1>
+        <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">Create Your Account</h1>
         <p className="text-lg text-center mb-8 leading-relaxed max-w-xl mx-auto opacity-80">
           Sign up to get personalized nutritional insights and track your health journey with Nutricare AI.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="name" className="block text-lg font-medium text-white">Full Name</label>
+            <label htmlFor="name" className="block text-lg font-medium text-gray-800">Full Name</label>
             <div className="relative">
-              <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
               <input
                 type="text"
                 id="name"
@@ -65,16 +65,16 @@ const Signup = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 required
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-lg font-medium text-white">Email Address</label>
+            <label htmlFor="email" className="block text-lg font-medium text-gray-800">Email Address</label>
             <div className="relative">
-              <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
               <input
                 type="email"
                 id="email"
@@ -82,16 +82,16 @@ const Signup = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 required
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-lg font-medium text-white">Password</label>
+            <label htmlFor="password" className="block text-lg font-medium text-gray-800">Password</label>
             <div className="relative">
-              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
               <input
                 type={showPassword ? "text" : "password"}
                 id="password"
@@ -99,13 +99,13 @@ const Signup = () => {
                 value={formData.password}
                 onChange={handleChange}
                 placeholder="Create a Password"
-                className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600"
               >
                 {showPassword ? <FaEye /> : <FaEye />}
               </button>
@@ -113,9 +113,9 @@ const Signup = () => {
           </div>
 
           <div>
-            <label htmlFor="confirmPassword" className="block text-lg font-medium text-white">Confirm Password</label>
+            <label htmlFor="confirmPassword" className="block text-lg font-medium text-gray-800">Confirm Password</label>
             <div className="relative">
-              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
               <input
                 type={showConfirmPassword ? "text" : "password"}
                 id="confirmPassword"
@@ -123,13 +123,13 @@ const Signup = () => {
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 placeholder="Confirm Your Password"
-                className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600"
               >
                 {showConfirmPassword ? <FaEye /> : <FaEye />}
               </button>
@@ -138,9 +138,9 @@ const Signup = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="age" className="block text-lg font-medium text-white">Age</label>
+              <label htmlFor="age" className="block text-lg font-medium text-gray-800">Age</label>
               <div className="relative">
-                <FaAccessibleIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <FaAccessibleIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
                 <input
                   type="number"
                   id="age"
@@ -148,21 +148,21 @@ const Signup = () => {
                   value={formData.age}
                   onChange={handleChange}
                   placeholder="Your Age"
-                  className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                   required
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="gender" className="block text-lg font-medium text-white">Gender</label>
+              <label htmlFor="gender" className="block text-lg font-medium text-gray-800">Gender</label>
               <div className="relative">
                 <select
                   id="gender"
                   name="gender"
                   value={formData.gender}
                   onChange={handleChange}
-                  className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 >
                   <option value="">Select Gender</option>
                   <option value="Male">Male</option>
@@ -175,9 +175,9 @@ const Signup = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="weight" className="block text-lg font-medium text-white">Weight (kg)</label>
+              <label htmlFor="weight" className="block text-lg font-medium text-gray-800">Weight (kg)</label>
               <div className="relative">
-                <FaWeightHanging className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <FaWeightHanging className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
                 <input
                   type="number"
                   id="weight"
@@ -185,16 +185,16 @@ const Signup = () => {
                   value={formData.weight}
                   onChange={handleChange}
                   placeholder="Your Weight"
-                  className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                   required
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="height" className="block text-lg font-medium text-white">Height (cm)</label>
+              <label htmlFor="height" className="block text-lg font-medium text-gray-800">Height (cm)</label>
               <div className="relative">
-                <FaWeightHanging className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <FaWeightHanging className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
                 <input
                   type="number"
                   id="height"
@@ -202,7 +202,7 @@ const Signup = () => {
                   value={formData.height}
                   onChange={handleChange}
                   placeholder="Your Height"
-                  className="w-full pl-10 py-3 bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full pl-10 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                   required
                 />
               </div>
@@ -210,7 +210,7 @@ const Signup = () => {
           </div>
 
           <div>
-            <label htmlFor="dietaryPreferences" className="block text-lg font-medium text-white">Dietary Preferences</label>
+            <label htmlFor="dietaryPreferences" className="block text-lg font-medium text-gray-800">Dietary Preferences</label>
             <textarea
               id="dietaryPreferences"
               name="dietaryPreferences"
@@ -218,7 +218,7 @@ const Signup = () => {
               onChange={handleChange}
               placeholder="Any dietary preferences?"
               rows="4"
-              className="w-full bg-gray-800 text-white border border-gray-700 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-white text-gray-900 border border-gray-300 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
             ></textarea>
           </div>
 

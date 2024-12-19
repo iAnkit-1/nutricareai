@@ -2,9 +2,9 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <div className="bg-gray-900 text-white py-16">
+    <div className="bg-white text-gray-900 py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <h1 className="text-5xl font-extrabold text-center mb-8 text-gray-100">
+        <h1 className="text-5xl font-extrabold text-center mb-8 text-gray-900">
           Features of Nutricare AI
         </h1>
         <p className="text-lg text-center mb-12 leading-relaxed max-w-4xl mx-auto opacity-80">
@@ -15,7 +15,7 @@ const Features = () => {
 
         <div className="grid md:grid-cols-2 gap-16">
           <div className="hover:scale-105 transition-transform">
-            <h2 className="text-3xl font-semibold mb-6 text-blue-400">Personalized Nutritional Insights</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-blue-500">Personalized Nutritional Insights</h2>
             <p className="text-lg leading-relaxed opacity-90">
               Nutricare AI delivers personalized nutritional insights based on your unique eating habits and health goals.
               By analyzing your daily food intake, it provides actionable recommendations to optimize your diet and
@@ -32,7 +32,7 @@ const Features = () => {
           </div>
 
           <div className="hover:scale-105 transition-transform">
-            <h2 className="text-3xl font-semibold mb-6 text-blue-400">AI-Powered Analysis</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-blue-500">AI-Powered Analysis</h2>
             <p className="text-lg leading-relaxed opacity-90">
               Nutricare AI utilizes advanced machine learning algorithms to analyze your food intake. It identifies
               gaps or excesses in your diet and provides suggestions to help you maintain a balanced, healthy lifestyle.
@@ -50,7 +50,7 @@ const Features = () => {
 
         <div className="grid md:grid-cols-2 gap-16 mt-12">
           <div className="hover:scale-105 transition-transform">
-            <h2 className="text-3xl font-semibold mb-6 text-blue-400">Easy-to-Use Interface</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-blue-500">Easy-to-Use Interface</h2>
             <p className="text-lg leading-relaxed opacity-90">
               Nutricare AI features an intuitive, user-friendly interface that makes it simple to track and analyze
               your daily meals. The system allows you to input your food intake effortlessly and receive clear,
@@ -67,7 +67,7 @@ const Features = () => {
           </div>
 
           <div className="hover:scale-105 transition-transform">
-            <h2 className="text-3xl font-semibold mb-6 text-blue-400">Scalable for All Diets</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-blue-500">Scalable for All Diets</h2>
             <p className="text-lg leading-relaxed opacity-90">
               Whether you're following a specific diet or just trying to eat healthier, Nutricare AI is versatile and
               adaptable. It supports various types of diets, preferences, and health conditions, ensuring that
@@ -85,7 +85,7 @@ const Features = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-4 text-blue-400">Get Started with Nutricare AI</h3>
+          <h3 className="text-2xl font-bold mb-4 text-blue-500">Get Started with Nutricare AI</h3>
           <p className="text-lg max-w-2xl mx-auto leading-relaxed opacity-90">
             Nutricare AI is the perfect companion for anyone looking to improve their eating habits and overall
             health. With its powerful features and easy-to-use interface, it's never been easier to stay on top of

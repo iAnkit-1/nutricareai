@@ -10,6 +10,7 @@ import Signup from './components/Signup/Signup'
 import Login from './components/Login/Login'
 import NutritionAnalysis from './components/Analysis/NutritionAnalysis'
 import AnalysisTable from './components/Analysis/AnalysisTable'
+import Connect from './pages/Connect/Connect'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,7 +24,7 @@ function App() {
       <Route path='/contact' element={<Contact />}/>
       <Route path='/login' element={<Login />}/>
       <Route path='/signup' element={<Signup />}/>
-      
+      <Route path='/connect' element={<Connect />} />
       </Routes>
     </>
   )

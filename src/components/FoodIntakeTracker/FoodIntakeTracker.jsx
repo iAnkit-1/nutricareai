@@ -50,7 +50,7 @@ const FoodIntakeTracker = () => {
         console.error('Failed to send data from frontend');
       }
     } catch (error) {
-      setLoading(false); 
+      setLoading(false);
       console.error('Error fetching analysis:', error);
     } finally {
       setLoading(false);
@@ -58,10 +58,12 @@ const FoodIntakeTracker = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center    p-4">
+    <div className="min-h-screen bg-gray-100 text-gray-900 flex flex-col items-center p-4">
       {/* Centered content */}
       <div className="flex flex-col items-center justify-center p-4">
-        <h2 className="text-3xl font-bold mb-4 text-center text-blue-500">Track Your Daily Food Ingredients</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center text-blue-600">
+          Track Your Daily Food Ingredients
+        </h2>
 
         {/* Food Selector Component */}
         <FoodSelector onAddFood={handleAddFood} />
@@ -74,16 +76,17 @@ const FoodIntakeTracker = () => {
         {/* Submit Button to send data to backend */}
         <button
           onClick={handleSubmit}
-          className="mt-4 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600"
+          className={`mt-4 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 ${
+            loading || foodItems.length === 0 ? 'opacity-50 cursor-not-allowed' : ''
+          }`}
           disabled={loading || foodItems.length === 0}
         >
           {loading ? 'Analyzing...' : 'Analyze Nutrition'}
         </button>
       </div>
 
-      
       {result && (
-        <div className="mt-[300px] text-white flex items-center justify-center h-screen">
+        <div className="mt-10 text-gray-900 flex items-center justify-center w-full">
           <AnalysisTable anaresult={result} />
         </div>
       )}
