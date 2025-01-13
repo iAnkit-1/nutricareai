@@ -32,7 +32,7 @@ const FoodIntakeTracker = () => {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/analyze', {
+      const response = await fetch('http://localhost:4000/api/go/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -85,7 +85,7 @@
 
 //     try {
 //       setLoading(true);
-//       const response = await fetch("http://localhost:5000/api/recommend", {
+//       const response = await fetch("http://localhost:4000/api/go/recommend", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -280,7 +280,7 @@ const AnalysisTable = ({ anaresult }) => {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/api/recommend", {
+      const response = await fetch("http://localhost:4000/api/go/recommend", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
