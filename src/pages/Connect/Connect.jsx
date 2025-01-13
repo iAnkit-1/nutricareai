@@ -8,32 +8,32 @@ const professionals = [
       name: "Dr. Sadhna Pushpjivi",
       education: "MBBS, MD (Nutrition)",
       designation: "Senior Nutritionist",
-      institute: "AIIMS, New Delhi",
-      image: "https://randomuser.me/api/portraits/women/39.jpg", // Replace with actual image
+      institute: "PGI Chandigarh, Chandigarh",
+      image: "https://randomuser.me/api/portraits/women/39.jpg", 
     },
     {
       id: 2,
       name: "Dr. Saurabh Pushpraj",
       education: "PhD in Dietetics",
       designation: "Clinical Dietitian",
-      institute: "Fortis Hospital, Mumbai",
-      image: "https://randomuser.me/api/portraits/men/45.jpg", // Replace with actual image
+      institute: "PGI Kanpur, Kanpur",
+      image: "https://randomuser.me/api/portraits/men/45.jpg", 
     },
     {
       id: 3,
       name: "Dr. Anukriti Saini",
       education: "MBBS, MD (Nutrition)",
       designation: "Junior Nutritionist",
-      institute: "Apollo Hospitals, Bangalore",
-      image: "https://randomuser.me/api/portraits/women/68.jpg", // Replace with actual image
+      institute: "Max Hospital, Nagpur",
+      image: "https://randomuser.me/api/portraits/women/68.jpg",
     },
     {
       id: 4,
-      name: "Dr. Rajesh Gupta",
+      name: "Dr. Rajneesh Gupta",
       education: "BSc, MSc (Food Science)",
       designation: "Dietary Consultant",
       institute: "Max Healthcare, Pune",
-      image: "https://randomuser.me/api/portraits/men/32.jpg", // Replace with actual image
+      image: "https://randomuser.me/api/portraits/men/32.jpg", 
     },
     {
       id: 5,
@@ -41,7 +41,7 @@ const professionals = [
       education: "MBBS, MD (Dietetics)",
       designation: "Nutrition Advisor",
       institute: "Manipal Hospital, Hyderabad",
-      image: "https://randomuser.me/api/portraits/women/47.jpg", // Replace with actual image
+      image: "https://randomuser.me/api/portraits/women/47.jpg",
     },
     {
       id: 6,
@@ -49,7 +49,7 @@ const professionals = [
       education: "PhD in Clinical Nutrition",
       designation: "Senior Dietitian",
       institute: "Columbia Asia Hospital, Kolkata",
-      image: "https://randomuser.me/api/portraits/men/58.jpg", // Replace with actual image
+      image: "https://randomuser.me/api/portraits/men/58.jpg", 
     },
     {
       id: 7,
@@ -57,7 +57,7 @@ const professionals = [
       education: "BSc, MSc (Food Technology)",
       designation: "Nutrition Specialist",
       institute: "Ruby Hall Clinic, Pune",
-      image: "https://randomuser.me/api/portraits/women/12.jpg", // Replace with actual image
+      image: "https://randomuser.me/api/portraits/women/12.jpg", 
     },
     {
       id: 8,
@@ -65,7 +65,7 @@ const professionals = [
       education: "MBBS, MD (Nutrition)",
       designation: "Chief Nutritionist",
       institute: "Medanta, Gurgaon",
-      image: "https://randomuser.me/api/portraits/men/63.jpg", // Replace with actual image
+      image: "https://randomuser.me/api/portraits/men/63.jpg", 
     },
     {
       id: 9,
@@ -73,7 +73,7 @@ const professionals = [
       education: "BSc, MSc (Food Science)",
       designation: "Dietary Consultant",
       institute: "Hiranandani Hospital, Mumbai",
-      image: "https://randomuser.me/api/portraits/women/50.jpg", // Replace with actual image
+      image: "https://randomuser.me/api/portraits/women/50.jpg", 
     },
   ];
 
